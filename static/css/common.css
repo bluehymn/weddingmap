@@ -1,0 +1,128 @@
+.legend {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  bottom: 0;
+  right: 0;
+  padding:15px;
+}
+
+.legend .line1,.legend .line2 {
+  padding-bottom: 5px;
+}
+
+.legend .name {
+  font-size: 12px;
+}
+
+.legend .line {
+  display: inline-block;
+  margin-left: 5px;
+  height: 5px;
+  width: 20px;
+}
+
+.legend .line1 .line {
+  background-color: #00aefd;
+}
+
+.legend .line2 .line {
+  background-color: #ff0000;
+}
+
+.legend .line3 .line {
+  background-color: #ff9900;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  border-radius: 36px;
+  overflow: hidden;
+  background-image: url(../images/avatar.jpg);
+  background-size: auto 100%;
+  border: solid 2px #fff;
+  z-index: 10001;
+  animation: shakehead 0.8s infinite;
+}
+
+@-webkit-keyframes shakehead{
+  0% {
+    transform: rotate(-15deg)
+  }
+  49% {
+    transform: rotate(-15deg)
+  }
+  50% {
+    transform: rotate(15deg)
+  }
+  100% {
+    transform: rotate(15deg)
+  }
+}
+
+.car {
+  width: 96px;
+  height: 48px;
+  position: absolute;
+  background-image: url(../images/car.png);
+  background-size: 100%;
+  z-index: 10000;
+  /* animation: shakehead 0.8s infinite; */
+}
+
+.car.towards-right {
+  transform: rotateY(180deg);
+}
+
+.btns {
+  position: absolute;
+  padding: 10px;
+  bottom: 120px;
+  right: 0;
+  background-color: rgba(255,255,255,0.9);
+}
+
+.btns button {
+  display: block;
+  border: none;
+  appearance: none;
+  margin-bottom: 10px;
+  padding: 8px;
+  color: #666;
+}
+
+.btns button:last-child {
+  margin-bottom: 0;
+}
+
+.btns button.active {
+  background-color: #00aefd;
+  color: #fff;
+}
+
+.status {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 15px;
+  background-color: rgba(0,196,250,0.9);
+  color: #fff;
+}
+
+.status .text {
+  white-space: nowrap;
+}
+
+.status .triangle {
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  border: 6px solid rgba(0,196,250,0.9);
+  border-right: 6px solid rgba(0,196,250,0);
+  border-bottom: 6px solid rgba(0,196,250,0);
+}
+
+.avatar.baobao{
+  background-position: right;
+}

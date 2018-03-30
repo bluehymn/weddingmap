@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no"/>
+    <meta name="theme-color" content="#000000">
+    <title>婚礼线路图</title>
+    <link rel="stylesheet" type="text/css" href="../css/common.css"/>
+  </head>
+  <body>
+    <div id="map" style="position:absolute;left:0;top:0;width:100%; height:100%">
+    </div>
+    <div class="btns">
+      <button data-status="0">未出发</button>
+      <button data-status="1">去程中</button>
+      <button data-status="2">回程中</button>
+      <button data-status="3">去酒店</button>
+    </div>
+    <div class="legend">
+      <div class="line1">
+        <input type="checkbox" id="line1-checkbox" checked/><span class="name">接亲去行</span><div class="line"></div>
+      </div>
+      <div class="line2">
+        <input type="checkbox" id="line2-checkbox" checked/><span class="name">接亲回程</span><div class="line"></div>
+      </div>
+      <div class="line3">
+        <input type="checkbox" id="line3-checkbox" checked/><span class="name">前往酒店</span><div class="line"></div>
+      </div>
+    </div>
+    <script charset="utf-8" src="../js/zepto.js"></script>
+    <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp&key=MGUBZ-AW4H6-5MNST-M6O4C-TC76T-YSBIS&libraries=drawing,geometry,autocomplete,convertor"></script>
+    <script charset="utf-8" src="../js/map.js"></script>
+    <script charset="utf-8" src="../js/admin.js"></script>
+  </body>
+</html>

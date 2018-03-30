@@ -62,3 +62,6 @@ dbconfig.js
 
 # rsa key
 *.pem
+
+# configuration
+.config
