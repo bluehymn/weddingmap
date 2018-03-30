@@ -14,3 +14,10 @@ exports.DBConfig = {
   pwd: '123456'
 
 }
+
+
+
+![截图](https://github.com/bluehymn/weddingmap/blob/master/static/doc/images/20180330112401.png?raw=true)
+
+
+
